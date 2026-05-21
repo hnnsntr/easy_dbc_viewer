@@ -1,5 +1,7 @@
 # DBC Network Explorer
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 DBC Network Explorer is a lightweight, browser-based engineering tool that turns an automotive CAN database file (`.dbc`) into an interactive network map of ECUs, messages, and signals.
 
 Instead of manually digging through raw text DBC files, you can upload a DBC and instantly visualize:
@@ -45,10 +47,20 @@ Requires Node.js (v20+) and Python 3 (v3.9+).
 - **Frontend (React & Vite):** Uses Tailwind CSS for styling and `@xyflow/react` (React Flow) for rendering the interactive logical topology graph. Provides detailed Node and Edge inspectors to drill down into the message sizes, CAN IDs, cycle times, and signal bit lengths.
 
 ## Testing with DBCs
-The `audi.dbc` example file in the repository root is from commaai's open-source `opendbc` project and is included for demo testing.
+The `audi.dbc` example file in the repository root is sourced from commaai's open-source [`opendbc`](https://github.com/commaai/opendbc) project and is included for demo testing.
+
+> **Third-party license notice:** `audi.dbc` is copyright © 2020 Comma.ai, Inc. and distributed under the [MIT License](https://github.com/commaai/opendbc/blob/master/LICENSE). It is compatible with this project's MIT license.
 
 If you want to test the capabilities of this tool with more DBC files, you can explore public DBC repositories like commaai's `opendbc`:
 ```bash
 git clone https://github.com/commaai/opendbc.git
 ```
 You can drag and drop any DBC file from that repository into the app!
+
+---
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+Copyright © 2026 **Hannes Näther** — free to use, modify, and distribute with attribution.
