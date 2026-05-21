@@ -8,7 +8,7 @@ Instead of manually digging through raw text DBC files, you can upload a DBC and
 - A detailed breakdown of **Signals** and where they are routed (receivers).
 - The logical communication connections between ECUs.
 
-## 🚀 One-Click Universal Launch (Recommended)
+## One-Click Universal Launch (Recommended)
 
 To guarantee the application runs flawlessly on **any device** (Windows, Linux, macOS) without needing to worry about Python versions, Node installations, or system paths, we use **Docker**.
 
@@ -28,7 +28,7 @@ To stop the app, just press `Ctrl+C`.
 
 ---
 
-## 💻 Alternative: Native Bash Script (Mac/Linux)
+## Alternative: Native Bash Script (Mac/Linux)
 
 If you prefer not to use Docker and are on macOS or Linux, you can use the native bash script.
 Requires Node.js (v20+) and Python 3 (v3.9+).
@@ -40,11 +40,11 @@ Requires Node.js (v20+) and Python 3 (v3.9+).
    ```
 3. Open your browser to **http://localhost:5173**.
 
-## 📁 Architecture
+## Architecture
 - **Backend (Python & FastAPI):** Uses the industry-standard `cantools` library to parse the DBC files. It filters out missing definitions, resolves implied nodes, correctly maps signals to their respective transmitters and receivers, and handles complex CAN structures like extended frames and multiplexing safely.
 - **Frontend (React & Vite):** Uses Tailwind CSS for styling and `@xyflow/react` (React Flow) for rendering the interactive logical topology graph. Provides detailed Node and Edge inspectors to drill down into the message sizes, CAN IDs, cycle times, and signal bit lengths.
 
-## 🧪 Testing with DBCs
+## Testing with DBCs
 The `audi.dbc` example file in the repository root is from commaai's open-source `opendbc` project and is included for demo testing.
 
 If you want to test the capabilities of this tool with more DBC files, you can explore public DBC repositories like commaai's `opendbc`:
